@@ -182,7 +182,7 @@ ul a:hover {
 }
 
 
-.logo-nav, .text-nav {
+.logo-nav, .text-nav, .nav-mobile {
     display: none;
 }
 
