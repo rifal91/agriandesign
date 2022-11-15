@@ -38,7 +38,8 @@ function showPopupFeeds() {
   var poCrea = document.getElementById('popupCreations');
   var poBanner = document.getElementById('popupBanner');
   poFeeds.style.left = "10vw";
- 
+  poCrea.style.left = "350vw";
+  poBanner.style.left = "350vw";
 }
 
 function showPopupBanner() {
@@ -47,6 +48,7 @@ function showPopupBanner() {
   var poBanner = document.getElementById('popupBanner');
   poBanner.style.left = "10vw";
   poCrea.style.left = "350vw";
+  poFeeds.style.left = "350vw";
 }
 
 function showPopupCreations() {
@@ -55,7 +57,7 @@ function showPopupCreations() {
   var poBanner = document.getElementById('popupBanner');
   poCrea.style.left = "10vw";
   poBanner.style.left = "350vw";
-
+  poFeeds.style.left = "350vw";
 }
 
 function closePopup(){
