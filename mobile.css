@@ -1,0 +1,143 @@
+
+
+@media (orientation: portrait) {
+  
+  .container {
+    left: 20vw;
+    top: 37vh;  
+  }
+
+  .swiper {
+        width: 60vw;
+        left:  0vw;
+        height: auto;
+      }
+
+
+.container0 {
+  position: absolute;
+  top:  5vh;
+}
+
+ul a {
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 18px;
+    text-decoration:none;
+    width: 100%;
+    position: relative;
+}
+
+.container-logo {
+  top:  15vh;
+  border: none;
+  width: 100vw;
+  height: 30vw;
+  padding: 0;
+}
+
+.swiperLogo {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide-logo {
+  width: 30vw;
+  border: 1px solid white;
+  height: 30vw;
+
+}
+.js-angle-slider__list {
+  top:  0;
+}
+
+.js-angle-slider__body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw  ;
+}
+
+.logo {
+  top: 3vh;
+  left: 2vw;
+}
+
+.logo-nav {
+  width: 98%;
+  display: flex;
+}
+
+.text {
+  display: none;
+}
+
+.text1 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 15%;
+    display: flex;
+}
+
+.img-2 {
+  border: 2px solid white;
+}
+
+.btn-close-popup {
+  top:  20vh;
+}
+
+.welcome-a {
+  display: none;
+}
+
+.welcome-b {
+  display: none;
+}
+
+.welcome-c {
+  bottom: 9vh;
+}
+
+.welcome-d {
+  bottom: 4vh;
+}
+
+.welcome2 {
+  display: inline;
+  color: white;
+  position: absolute;
+}
+
+.img-feeds {
+  
+}
+
+.swiper-slide-fh {
+  width: 40vw;
+  height: auto;
+  background: red;
+}
+
+.img-crea {
+    height: 60vw;
+     border: 3px solid white;
+     border-radius: 20px;
+    width: 60vw;
+    margin-top: 60%;
+}
+
+.btn-close-popup {
+  height: 5vh;
+  position: absolute;
+  top: 60vh;
+  left: 0vw;
+  width: 40w;
+  z-index: 2;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+}

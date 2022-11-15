@@ -1,0 +1,55 @@
+.swiper {
+        width: 30vw;
+        height: auto;
+      }
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        border:  3px solid white;        
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .swiper-slide:nth-child(1n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(2n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(3n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(4n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(5n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(6n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(7n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(8n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(9n) {
+        background: transparent;
+      }
+
+      .swiper-slide:nth-child(10n) {
+        background: transparent;
+      }
