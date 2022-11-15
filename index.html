@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Rifal Agrian gunadi">
+    <title>Agrian Design</title>
+    <!-- font icons -->
+    <!-- Bootstrap + LeadMark main styles -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="swiper.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+
+</head>
+<body>
+
+<!-- <button onclick="closeFullscreen();">Close Fullscreen</button> -->
+<div id="awal" class="awal">
+    <img class="img-awal" src="img/agrian.svg">
+    <h1 class="text-awal">" Welcome To Agrian Design "</h1>
+    <button class="open-web" onclick="openFullscreen();">Open</button>
+</div>
+
+<!-- navbar -->
+<img class="logo" src="img/Agrian.svg">
+<h2 class="text">Agrian Design</h2>
+
+<h1 class="welcome welcome-a">These are</h1>
+<h1 class="welcome welcome-b">all my works</h1>
+
+
+<!-- navbar -->
+<nav>
+    <div class="container0">
+        <div id="i" class="inav">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+
+    <ul id="nav" class="nav">
+        <h2 class="text1">Agrian Design</h2>
+        <img class="logo logo-nav" src="img/Agrian.svg">
+        <h1 class="welcome2 welcome-c">These are</h1>
+        <h1 class="welcome2 welcome-d">all my works</h1>
+        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
+        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
+        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
+    </ul>
+</nav>  
+<!-- navbar -->
+
+
+
+
+
+<div id="containerFeeds" class="container">
+<div class="swiper mySwiper feeds-home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-F.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-B.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-A.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-C.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-D.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/Feeds/Feeds-E.jpg"></div>
+      </div>
+</div>
+</div>
+<!-- Feeds -->
+<!-- Feeds -->
+
+
+<!-- Logo -->
+<div class="container-logo">
+<div class="swiper swiperLogo">
+      <div class="swiper-wrapper swiper-wrapper-logo">
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-A.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-B.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-C.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-D.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-E.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="card-F.png">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Logo -->
+
+
+<div class="js-angle-slider">
+  <!--
+    prev,nextボタン
+  --><!-- 
+  <div class="js-angle-slider__pager">
+    <button class="js-angle-slider__prev" type="button">
+      prev
+    </button>
+    <button class="js-angle-slider__next" type="button">
+      next
+    </button>
+  </div>
+   -->
+  <div class="js-angle-slider__body">
+  
+    <div class="js-angle-slider__list" data-slide-angle="12" data-show="7" data-speed="400" data-drag-speed-ratio="0.1" data-dots="true">
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-A.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-B.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-C.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-D.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-E.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-F.png"></div>
+    </div>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div onclick="closePopup()" id="lightbox" class="lightbox">
+
+</div>
+<!-- lightbox -->
+
+
+<!-- PopUp -->
+           
+    <div id="popupBanner" class="popup-banner">
+           
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
+
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner">
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-B.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-A.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-C.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-D.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupCreations" class="popup-banner">
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea1.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea2.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea3.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea4.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea5.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea6.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea7.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea8.jpg"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="popupFeeds" class="popup-banner">
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-A.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-B.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-C.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-D.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-E.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/Feeds/Feeds-F.jpg"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- PopUp -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/bawah.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+    var swiper = new Swiper(".swiperLogo", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+       window.addEventListener("load", function() {
+    var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+   bannerNode.parentNode.removeChild(bannerNode);
+});
+</script>
+</body>
+</html>
