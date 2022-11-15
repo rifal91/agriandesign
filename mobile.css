@@ -2,6 +2,10 @@
 
 @media (orientation: portrait) {
   
+  #nav {
+    display: none;
+  }
+
   .container {
     left: 20vw;
     top: 37vh;  
