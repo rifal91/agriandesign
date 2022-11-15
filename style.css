@@ -468,9 +468,11 @@ p {
     background: transparent;
     font-weight: bolder;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .btn-close-popup:hover {
+    font-weight: bolder;
     color: darkmagenta;
     background: white;
 }
