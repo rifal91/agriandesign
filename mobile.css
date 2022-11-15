@@ -2,9 +2,7 @@
 
 @media (orientation: portrait) {
   
-  #nav {
-    display: none;
-  }
+
 
   .container {
     left: 20vw;
@@ -68,11 +66,6 @@ ul a {
   left: 2vw;
 }
 
-.logo-nav {
-  width: 98%;
-  display: flex;
-}
-
 .text {
   display: none;
 }
@@ -101,12 +94,105 @@ ul a {
   display: none;
 }
 
-.welcome-c {
-  bottom: 9vh;
+
+.nav-desktop {
+  display: none;
 }
 
-.welcome-d {
-  bottom: 4vh;
+.logo-nav {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 0%;
+}
+
+.text-nav {
+  display: flex;
+  position: absolute;
+  color: white;
+  bottom: 3%;
+  height: auto;
+  font-family: candara;
+  text-align: center;
+}
+
+.lightbox-mobile {
+  z-index: 19;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.ul-nav-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon-nav {
+  width: 25vw;
+  position: absolute;
+  height: 25vw;
+  right: -4vw;
+  z-index: 19;
+  top: 3vh;
+  right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 0.5s;
+}
+
+.icon-nav:hover {
+  transform: rotateZ(90deg);
+}
+
+.nav-icon {
+  width: 50%;
+  height: 50%;
+}
+
+.c1, .c2, .c3 {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  background: white;
+}
+
+.c1 {
+  top:  0%;
+}
+
+.c2 {
+  top:  30%;
+}
+
+
+.c3 {
+  top:  60%;
+}
+
+.nav-mobile {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  box-shadow: 10vw 0 30px rgba(100, 0, 140, 0.4);
+  border-top-left-radius: 140vw;
+  border-top-right-radius: 140vw;
+  top: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 21 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 0.4s;
 }
 
 .welcome2 {

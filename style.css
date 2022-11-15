@@ -83,10 +83,6 @@ body::-webkit-scrollbar {
   top: ;
 }
 
-.logo-nav {
-    display: none;
-}
-
 .utama {
     width: 100vw;
     height: 130vh;
@@ -130,69 +126,13 @@ body::-webkit-scrollbar {
 
 
 
-/* MOBILE DISPLAY */
-nav {
-    z-index: 9999;
-    top: 0;
-    position: absolute;
-    width: 100%;
+
+.icon-nav {
+    display: none;
 }
 
-.container0 {
-    display: inline-block;
-    height: 60px;
-    width: 100%;
-}
 
-.inav {
-    right: 5vw;
-    padding: 12px;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Chrome */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 9999999;
-}
 
-.c1,
-.c2,
-.c3 {
-    width: 5vw;
-    height: 2px;
-    background: white;
-    border-radius: 2px;
-    transition: transform .3s ease-out, width .3s ease-in;
-    transform: translateY(0) rotate(0);
-    -webkit-transform: translateY(0) rotate(0);
-    -webkit-transition: -webkit-transform .3s ease-out, width .3s ease-in;
-}
-
-.close-c1 {
-    transform: translateY(10px) rotate(45deg);
-    transition: transform .3s ease-out;
-    -webkit-transform: translateY(10px) rotate(45deg);
-    -webkit-transition: -webkit-transform .3s ease-out;
-}
-
-.close-c2 {
-    width: 0;
-    transition: width .3s ease-in;
-    -webkit-transition: width .3s ease-in;
-}
-
-.close-c3 {
-    transform: translateY(-10px) rotate(-45deg);
-    transition: transform .3s ease-out;
-    -webkit-transform: translateY(-10px) rotate(-45deg);
-    -webkit-transition: -webkit-transform .3s ease-out;
-}
 
 .nav {
     position: absolute;
@@ -240,9 +180,14 @@ ul a:hover {
    border-bottom:  1px solid white;
 
 }
-/* DESKTOP MODE */
-@media (min-width: 500px) {
-#nav {
+
+
+.logo-nav, .text-nav {
+    display: none;
+}
+
+#nav {  
+        z-index: 21;
         position: absolute;
         top: 0vw;
         display: -ms-flexbox;
@@ -262,10 +207,6 @@ ul a:hover {
         border-top: 0;
         padding: 1vw 2vw;
     }
-    .container0 {
-        display: none;
-    }
-}
 
 /* ANIMATION */
 @-webkit-keyframes show {
@@ -303,113 +244,8 @@ h1{
   margin-top:20px;
 }
 
-.door {
-  position: relative;
-  border-radius: 20px;
-  width: 170px;
-  height:270px;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transform: perspective(2500px);
-}
 
-.door-front {
-  width: 170px;
-  height:270px;
-  border-radius: 20px;
 
-  overflow: hidden;
-  transform-origin: left;
-  box-shadow: 30px 0 50px rgba(0,0,0,0.1);
-  position: absolute;
-  background: url(img/panto.jpg);
-  background-size: 100% 100%;
-  z-index:1;
-  transition: .5s;
-}
-
-/*.door-front:before, .door-front:after {
-  content:"";
-  position: absolute;
-  background: url(img/panto.jpg);
-  background-size: 100% 100%;
-
-  width: 105px;
-  height: 75px;
-  border: 5px ridge rgba(0, 0, 0, 0.1);
-  left:22.5px;
-}*/
-
-.door-front:before {
-
-  top:25px;
-}
-
-.door-front:after {
-  top:155px;
-}
-.knob {
-  position: absolute;
-  width: 20px;
-  height:30px;
-  background-color: ;
-  top:122px;
-  left:145px;
-  border-radius:2px;
-}
-
-.knob:before {
-  content:"";
-  position: absolute;
-  border-radius:50%;
-  background: url(img/panto.jpg);
-  width:18px;
-  height:18px;
-  left:-1px;
-  box-shadow: 2px 2px rgba(0,0,0,0.2);
-}
-
-.knob:after {
-  content:"";
-  background: url(img/panto.jpg);
-
-  position: absolute;
-  width:4px;
-  height:7px;
-  top:20px;
-  left:8.5px;
-}
-
-.door:hover .door-front {
-  transform: rotateY(-160deg); 
-  background: url;
-
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
-}
-
-.door-back {
-  position: relative;
-  border-radius: 20px;
-
-  background: linear-gradient(to bottom right, rgba(40, 4, 40, 1.0), rgba(10, 4, 10, 1.0));
-  background-position: absolute;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-  height: 100%;
-  overflow: hidden;
-  border: 7px solid url(img/panto.jpg);
-}
-
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
 
 .welcome {
     color: white;
@@ -596,8 +432,8 @@ p {
 
 .lightbox {
     position: absolute;
-    z-index: 20;
-    background: rgba(0, 0, 0, 0.9);
+    z-index: 22;
+    background: rgba(0, 0, 0, 0.5);
     width: 200vw;
     border-top-right-radius: 300px;
     border-bottom-right-radius: 300px;
@@ -610,7 +446,7 @@ p {
 
 .popup-banner {
     border-radius: 10px;
-    z-index: 21;
+    z-index: 26;
     left: -300vh;
     /*border: 1px solid cyan;*/
     top: 14vh;
@@ -660,10 +496,6 @@ p {
     height: 25vw;
     left: 13vw;
     transform: rotateZ(15deg);
-}
-
-.swiper-slide {
-    
 }
 
 .swiper-banner {

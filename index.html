@@ -37,27 +37,38 @@
 <h1 class="welcome welcome-b">all my works</h1>
 
 
-<!-- navbar -->
-<nav>
-    <div class="container0">
-        <div id="i" class="inav">
-            <div class="c1"></div>
-            <div class="c2"></div>
-            <div class="c3"></div>
-        </div>
-    </div>
-
-    <ul id="nav" class="nav">
-        <h2 class="text1">Agrian Design</h2>
-        <img class="logo logo-nav" src="img/Agrian.svg">
-        <h1 class="welcome2 welcome-c">These are</h1>
-        <h1 class="welcome2 welcome-d">all my works</h1>
+<!-- navbar desktop -->
+<nav class="nav-desktop">
+    <ul id="nav" class="nav">>
         <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
         <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
         <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
     </ul>
 </nav>  
-<!-- navbar -->
+<!-- navbar desktop-->
+
+
+<!-- navbar mobile -->
+    <div id="iconNav" onclick="openNavMobile()" class="icon-nav">
+        <div class="nav-icon">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+<div id="navMobile" class="nav-mobile">
+
+    <ul class="ul-nav-mobile">
+        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
+        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
+        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
+    </ul>
+
+    <img class="logo-nav" src="img/Agrian.svg">
+    <h4 class="text-nav">Agrian Design</h4 >
+</div>    
+
+<!-- navbar mobile -->
 
 
 
@@ -134,9 +145,8 @@
 </div>
 
 <!-- lightbox -->
-<div onclick="closePopup()" id="lightbox" class="lightbox">
-
-</div>
+<div onclick="closePopup()" id="lightbox" class="lightbox"></div>
+<div onclick="closeNav()" id="lightboxMobile" class="lightbox lightbox-mobile"></div>
 <!-- lightbox -->
 
 
