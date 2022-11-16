@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Rifal Agrian gunadi">
+    <link href="img/fav.ico" rel="shortcut icon">
+    <title>Agrian Design</title>
+    <!-- font icons -->
+    <!-- Bootstrap + LeadMark main styles -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="swiper.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 0vh;
+  left: 40vw;
+}
+
+h1, h4 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10vh;
+}
+
+h4 {
+  font-weight: lighter;
+  bottom: 14vh;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+table {
+  width: 80%;
+  text-align: center;
+  left: 10%;
+  position: absolute;
+}
+
+td {
+  padding: 10px;
+}
+
+@media (orientation: portrait) {
+
+body {
+  padding: 10vw;
+}
+
+.logo {
+  width: 40vw;
+  height: 40vw;
+  left: 30vw;
+  top: 10vh;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.logo:hover {
+  transform: rotateZ(45deg);
+}
+
+h1 {
+  font-size: 1em;
+  bottom: 10vh;
+}
+
+h4 {
+  font-size: 0.7em;
+}
+
+
+  }
+</style>
+</head>
+<body>
+  <img class="logo" src="img/Agrian.svg">
+    <h1>AGRIAN DESIGN BRIEF</h1>
+    <h4>"Silahkan sesuaikan rasa dan tampilan design anda (geser bola ke arah kiri atau kanan)"</h4>
+  <table>
+    <tr>
+      <td>Minimalis</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+      <td>Compleks</td>
+    </tr>
+    <tr>
+      <td>Modern</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+      <td>Klasik</td>
+    </tr>
+    <tr>
+      <td>Ceria</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+      <td>Serious</td>
+    </tr>
+    <tr>
+      <td>Berisik</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+      <td>Tenang</td>
+    </tr>
+    <tr>
+      <td>Mewah</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></td>
+      <td>Kasar</td>
+    </tr>
+  </table>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+</body>
+</html>
