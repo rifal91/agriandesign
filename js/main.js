@@ -1,57 +1,70 @@
-
-
-
-
-
 // Popup
-function showPopup(){
+  var poBrief = document.getElementById('brief');
   var lb = document.getElementById('lightbox');
   var popup = document.getElementById('popup');
+  var poFeeds = document.getElementById('popupFeeds');
+  var poCrea = document.getElementById('popupCreations');
+  var poBanner = document.getElementById('popupBanner');
+  var form = document.getElementById('form');
+
+function showPopup(){
   lb.style.left = "0vw";
 }
 
 function showPopupFeeds() {
-  var poFeeds = document.getElementById('popupFeeds');
-  var poCrea = document.getElementById('popupCreations');
-  var poBanner = document.getElementById('popupBanner');
   poFeeds.style.left = "10vw";
   poCrea.style.left = "-350vw";
   poBanner.style.left = "-350vw";
+  poBrief.style.left = "100vw";
+    form.style.left = "100vw";
 }
 
 function showPopupBanner() {
-  var poFeeds = document.getElementById('popupFeeds');
-  var poCrea = document.getElementById('popupCreations');
-  var poBanner = document.getElementById('popupBanner');
   poBanner.style.left = "10vw";
   poCrea.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
+  poBrief.style.left = "100vw";
+  form.style.left = "100vw";
 }
 
 function showPopupCreations() {
-  var poFeeds = document.getElementById('popupFeeds');
-  var poCrea = document.getElementById('popupCreations');
-  var poBanner = document.getElementById('popupBanner');
   poCrea.style.left = "10vw";
   poBanner.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
+  poBrief.style.left = "100vw";
+  form.style.left = "100vw";
 }
 
+function nextForm() {
+  poBrief.style.left = "5vw";
+  form.style.left = "100vw";
+  poBanner.style.left = "-350vw";
+  poFeeds.style.left = "-350vw";
+  poCrea.style.left = "-350vw";
+
+}
+
+function backForm() {
+  poBrief.style.left = "100vw";
+  form.style.left = "5vw";
+  poBanner.style.left = "-350vw";
+  poFeeds.style.left = "-350vw";
+  poCrea.style.left = "-350vw";
+}
+
+function showPopupBrief() {
+  poBrief.style.left = "100vw";
+  form.style.left = "5vw";
+}
+
+
 function closePopup(){
-  var lb = document.getElementById('lightbox');
-  var popup = document.getElementById('popup');
-  var cpopup = document.getElementById('closePopup');
-
   lb.style.left = "-200vw";
-  var poBanner = document.getElementById('popupBanner');
-  var poCrea = document.getElementById('popupCreations');
-  var poFeeds = document.getElementById('popupFeeds');
-
-
-  poBanner.style.left = "350vw";
-  poCrea.style.left = "350vw";
-  poFeeds.style.left = "350vw";
-
+  poBanner.style.left = "-350vw";
+  poCrea.style.left = "-350vw";
+  poFeeds.style.left = "-350vw";
+  poBrief.style.left = "100vw";
+  form.style.left = "100vw";
 }
 
 var elem = document.documentElement;
