@@ -73,11 +73,23 @@
 <!-- navbar mobile -->
 <a onclick="showPopup(); backForm()" class="open-web btn-design">Design</a>
 <div id="form" class="brief form">
+    <img class="logo-brief" src="img/Agrian.svg">   
     <button class="btn-close-popup close-brief" onclick="closePopup()">x</button>
-            <img class="logo-brief" src="img/Agrian.svg">   
     <h1 class="title-brief">AGRIAN DESIGN BRIEF</h1>
   <table>
     <form class="whatsapp-form">
+    <tr>
+      <td>
+        <select id="wa_select">
+              <option hidden='hidden' selected='selected' value='default'>Pilih Design</option>
+              <option value="Feeds">Feeds</option>
+              <option value="Banner">Banner</option>
+              <option value="Creations">Creations</option>
+              <option value="Logo">Logo</option>
+              <option value="Flyers">Flyers</option>
+        </select>
+      </td>
+    </tr>
     <tr>
       <td><input class="validate" id="wa_name" placeholder="Nama" name="name" required="" type="text" value=''/></td>
     </tr>
@@ -85,25 +97,10 @@
       <td><input class="validate" id="wa_email" placeholder="Email" name="email" required="" type="email" value=''/></td>
     </tr>
     <tr>
-      <td>
-          <select id="wa_select">
-              <option hidden='hidden' selected='selected' value='default'>Pilih Design</option>
-              <option value="Feeds">Feeds</option>
-              <option value="Banner">Banner</option>
-              <option value="Creations">Creations</option>
-              <option value="Logo">Logo</option>
-              <option value="Flyers">Flyers</option>
-          </select>
-      </td>
-    </tr>
-    <tr>
-      <td><input class="validate" id="wa_number" placeholder="No Hp/Wa" name="count" required="" type="number" value=''/></td>
+      <td><input class="validate" id="wa_number" placeholder="Hp/Wa" name="count" required="" type="number" value=''/></td>
     </tr>
     <tr>
       <td><input class="validate" id="wa_url" placeholder="Alamat" name="url" required="" type="url" value=''/></td>
-    </tr>
-    <tr>
-      <td><textarea id='wa_textarea' placeholder='Keterangan' maxlength='5000' row='1' required=""></textarea></td>
     </tr>
     <tr>        
       <td><button onclick="nextForm()" class="open-web btn-form">Next</button></td>
@@ -112,7 +109,7 @@
 
 </div>
 
-<div id="brief" class="brief">
+<div id="brief" class="brief" style="position: absolute">
     <img class="logo-brief" src="img/Agrian.svg">
     <h1 class="title-brief">AGRIAN DESIGN BRIEF</h1>
     <h4 class="text-brief">"Silahkan sesuaikan rasa dan tampilan design anda (geser bola ke arah kiri atau kanan)"</h4>
@@ -143,20 +140,21 @@
       <td> <input type="range" min="1" max="100" value="50" class="slider" id="eleToAbs"></td>
       <td>Abstrak</td>
     </tr>
-    <tr>
   </table>
-  <br><br>
-  <table>
+  <input class="validate" id='wa_textarea' placeholder='Keterangan (opsional)' maxlength='5000' row='1' required="required">
+  <table class="btn-table">
         <td><a class="open-web btn-form" onclick="backForm()">Back</a></td>
         <td><a class="send_form open-web btn-form" style="text-decoration: none;" href="javascript:void" type="submit" title="Send to Whatsapp">Order</a></td>
     </tr>
     <tr>
     </tr>
    </table>  
-<input style="visibility: hidden;" disabled type="text" value="" id="briefCode">
+
+<input class="validate" style="display: none;"  value="" id="briefCode">
+
+
 </form>
 </div>
-
 <script type="text/javascript">
 var minToCom = document.getElementById('minToCom');
 var modToCla = document.getElementById('modToCla');
@@ -185,6 +183,7 @@ eleToAbs.oninput = function() {
   briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
 }
 </script>
+
 
 
 <div id="containerFeeds" class="container">
@@ -356,7 +355,7 @@ var input_blanter = document.getElementById('wa_email');
 /* Whatsapp Settings */
 var walink = 'https://web.whatsapp.com/send',
     phone = '6283106300509',
-    walink2 = 'Halo saya ingin ',
+    walink2 = 'Design Order  ',
     text_yes = 'Terkirim.',
     text_no = 'Isi semua Formulir lalu klik Send.';
 
@@ -373,7 +372,8 @@ var input_select1 = $("#wa_select :selected").text(),
     input_email1 = $("#wa_email").val(),
     input_number1 = $("#wa_number").val(),
     input_url1 = $("#wa_url").val(),
-    input_textarea1 = $("#wa_textarea").val();
+    input_textarea1 = $("#wa_textarea").val(),
+    input_brief1 = $("#briefCode").val();
 
 /* Final Whatsapp URL */
 var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
@@ -382,7 +382,8 @@ var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A
     '*Jenis Design* : ' + input_select1 + '%0A' +
     '*No Hp/Wa* : ' + input_number1 + '%0A' +
     '*Alamat* : ' + input_url1 + '%0A' +
-    '*Keterangan* : ' + input_textarea1 + '%0A';
+    '*Keterangan* : ' + input_textarea1 + '%0A' + 
+    '*Brief Code* : ' + input_brief1 + '%0A';
 
 /* Whatsapp Window Open */
 window.open(blanter_whatsapp,'_blank');

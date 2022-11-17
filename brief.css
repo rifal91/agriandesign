@@ -6,34 +6,32 @@
   border-radius: 20px;
   z-index: 56;
   background: rgba(0, 0, 0, 0.9);
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition-duration: 1s;
   box-shadow: 10vw 0 30px rgba(100, 0, 140, 0.4);;
+  padding: 0;
 }
 
 .logo-brief {
-  width: 10vw;
-  height: 10vw;
-  position: absolute;
-  top: 5vh;
-  left: 40vw;
+  position: relative;
+  width: 8vw;
+  height: 8vw;
 
 }
 
 .title-brief, .text-brief {
-  position: absolute;
+  position: relative;
   width: 100%;
   text-align: center;
-  bottom: 10vh;
+  font-size: 1em;
 }
 
 .text-brief {
   font-weight: lighter;
-  bottom: 10vh;
 }
 
 
@@ -93,12 +91,23 @@ table {
   width: 90%;
   text-align: center;
   left: 5%;
+}
 
+.btn-table {
+  margin-top: 7vh;
+}
+
+.btn-form {
+  position: relative;
+  margin: 7vh;
 }
 
 
 
 @media (orientation: portrait) {
+table {
+    margin: 10vw 0;
+}
 
 td {
   padding: 2vw;
@@ -108,6 +117,7 @@ td {
   width: 90%;
   height: 90%;
   left: 100vw;
+  padding: 0;
   top: 5vh;
 }
 
@@ -116,32 +126,30 @@ td {
 }
 
 .logo-brief {
-  width: 40vw;
-  height: 40vw;
-  position: absolute;
-  left: 25vw;
-  top: 3vh;
+  width: 25vw;
+  height: 25vw;
+  position: relative;
   cursor: pointer;
   transition-duration: 0.5s;
+  margin: 0;
 }
 
-.logo:hover {
-  transform: rotateZ(45deg);
-}
 
 .title-brief {
-  font-size: 1em;
-  bottom: 10vh;
+  margin: 0;
 }
 
 .text-brief {
-  font-size: 0.7em;
-  padding: 10vw;
-  bottom: 8vh;
+  padding: 2vw 10vw;
+}
+
+.btn-table {
+  margin-top: 6vh;
 }
 
 .btn-form {
   margin: 0;
+  position: relative;
 }
 
 .close-brief {

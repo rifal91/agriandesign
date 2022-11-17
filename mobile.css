@@ -56,7 +56,7 @@ ul a {
 
 .js-angle-slider__body {
   position: absolute;
-  bottom: 0;
+  top: 80vh;
   right: 0;
   width: 100vw  ;
 }

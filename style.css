@@ -360,7 +360,7 @@ h1{
 
 .js-angle-slider__list {
    position: absolute;
-   width: 60vw  ;
+   width: 60vw;
    top: 60vh;
    right: -40vw;
 }
@@ -369,7 +369,8 @@ h1{
 }
 
 .js-angle-slider__body {
-  position: relative;
+  position: absolute;
+  top: 0vh;
 }
 .js-angle-slider__list {
   display: flex;
