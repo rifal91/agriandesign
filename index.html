@@ -1,240 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Rifal Agrian gunadi">
-    <link href="img/fav.ico" rel="shortcut icon">
-    <title>Agrian Design</title>
-    <!-- font icons -->
-    <!-- Bootstrap + LeadMark main styles -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="stylesheet" href="swiper.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+.brief {
+  width: 90vw;
+  height: 90vh;
+  left: 100vw;
+  top: 5vh;
+  border-radius: 20px;
+  z-index: 56;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition-duration: 1s;
+  box-shadow: 10vw 0 30px rgba(100, 0, 140, 0.4);;
+}
 
-</head>
-<body>
+.logo-brief {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: 5vh;
+  left: 40vw;
 
-<!-- <button onclick="closeFullscreen();">Close Fullscreen</button> -->
-<div id="awal" class="awal">
-    <img class="img-awal" src="img/Agrian.svg">
-    <h1 class="text-awal">" Welcome To Agrian Design "</h1>
-    <button class="open-web" onclick="openFullscreen();">Open</button>
-</div>
+}
 
-<!-- navbar -->
-<img class="logo" src="img/Agrian.svg">
-<h2 class="text">Agrian Design</h2>
+.title-brief, .text-brief {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10vh;
+}
 
-<h1 class="welcome welcome-a">These are</h1>
-<h1 class="welcome welcome-b">all my works</h1>
-
-
-<!-- navbar desktop -->
-<nav class="nav-desktop">
-    <ul id="nav" class="nav">>
-        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
-        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
-        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
-    </ul>
-</nav>  
-<!-- navbar desktop-->
+.text-brief {
+  font-weight: lighter;
+  bottom: 10vh;
+}
 
 
-<!-- navbar mobile -->
-    <div id="iconNav" onclick="openNavMobile()" class="icon-nav">
-        <div class="nav-icon">
-            <div class="c1"></div>
-            <div class="c2"></div>
-            <div class="c3"></div>
-        </div>
-    </div>
-<div id="navMobile" class="nav-mobile">
+.close-brief {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+}
 
-    <ul class="ul-nav-mobile">
-        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
-        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
-        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
-    </ul>
+.form {
+  left: 100vw;
+}
 
-    <img class="logo-nav" src="img/Agrian.svg">
-    <h4 class="text-nav">Agrian Design</h4 >
-</div>    
+.slidecontainer {
+  width: 100%;
+}
 
-<!-- navbar mobile -->
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
 
+.slider:hover {
+  opacity: 1;
+}
 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
 
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
 
+td {
+  padding: 1vh;
+}
 
-<div id="containerFeeds" class="container">
-<div class="swiper mySwiper feeds-home">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-F.jpg"></div>
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-B.jpg"></div>
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-A.jpg"></div>
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-C.jpg"></div>
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-D.jpg"></div>
-        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-E.jpg"></div>
-      </div>
-</div>
-</div>
-<!-- Feeds -->
-<!-- Feeds -->
+table {
+  width: 90%;
+  text-align: center;
+  left: 5%;
 
-
-<!-- Cards -->
-<div class="container-logo">
-<div class="swiper swiperLogo">
-      <div class="swiper-wrapper swiper-wrapper-logo">
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-A.png">
-        </div>
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-B.png">
-        </div>
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-C.png">
-        </div>
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-D.png">
-        </div>
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-E.png">
-        </div>
-        <div class="swiper-slide swiper-slide-logo">
-            <img src="img/cards/Card-F.png">
-        </div>
-      </div>
-    </div>
-</div>
-<!-- Cards -->
+}
 
 
-<div class="js-angle-slider">
-  <!--
-    prev,nextボタン
-  --><!-- 
-  <div class="js-angle-slider__pager">
-    <button class="js-angle-slider__prev" type="button">
-      prev
-    </button>
-    <button class="js-angle-slider__next" type="button">
-      next
-    </button>
-  </div>
-   -->
-  <div class="js-angle-slider__body">
-  
-    <div class="js-angle-slider__list" data-slide-angle="12" data-show="7" data-speed="400" data-drag-speed-ratio="0.1" data-dots="true">
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-A.png"></div>
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-B.png"></div>
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-C.png"></div>
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-D.png"></div>
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-E.png"></div>
-      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-F.png"></div>
-    </div>
-  </div>
-</div>
 
-<!-- lightbox -->
-<div onclick="closePopup()" id="lightbox" class="lightbox"></div>
-<div onclick="closeNav()" id="lightboxMobile" class="lightbox lightbox-mobile"></div>
-<!-- lightbox -->
+@media (orientation: portrait) {
 
+td {
+  padding: 2vw;
+}
 
-<!-- PopUp -->
-           
-    <div id="popupBanner" class="popup-banner">
-           
-            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
+.brief {
+  width: 90%;
+  height: 90%;
+  left: 100vw;
+  top: 5vh;
+}
 
-        <div class="swiper mySwiper swiper-banner">
-            <div class="swiper-wrapper swiper-wrapper-baner">
-                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-B.jpg"></div>
-                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-A.jpg"></div>
-                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-C.jpg"></div>
-                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-D.jpg"></div>
-            </div>
-        </div>
-    </div>
+.form {
+  left: 100vw;
+}
 
-    <div id="popupCreations" class="popup-banner">
-            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
-        <div class="swiper mySwiper swiper-banner">
-            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea1.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea2.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea3.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea4.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea5.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea6.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea7.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea8.jpg"></div>
-            </div>
-        </div>
+.logo-brief {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  left: 25vw;
+  top: 3vh;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
 
-    </div>
+.logo:hover {
+  transform: rotateZ(45deg);
+}
 
-    <div id="popupFeeds" class="popup-banner">
-            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">Close</button>
-        <div class="swiper mySwiper swiper-banner">
-            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-A.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-B.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-C.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-D.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-E.jpg"></div>
-                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-F.jpg"></div>
-            </div>
-        </div>
+.title-brief {
+  font-size: 1em;
+  bottom: 10vh;
+}
 
-    </div>
+.text-brief {
+  font-size: 0.7em;
+  padding: 10vw;
+  bottom: 8vh;
+}
 
+.btn-form {
+  margin: 0;
+}
 
-<!-- PopUp -->
+.close-brief {
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+}
 
-<script src="js/main.js"></script>
-<script src="js/bawah.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        effect: "cards",
-        grabCursor: true,
-      });
-
-    var swiper = new Swiper(".swiperLogo", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-       window.addEventListener("load", function() {
-    var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-   bannerNode.parentNode.removeChild(bannerNode);
-});
-</script>
-</body>
-</html>
+  }
