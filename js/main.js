@@ -36,12 +36,17 @@ function showPopupCreations() {
 }
 
 function nextForm() {
+  if(waName.value == "" || waEmail.value == "" || waNumber.value == "" || waUrl.value == ""){
+  form.style.left = "5vw";
+}
+
+  else {
   poBrief.style.left = "5vw";
-  form.style.left = "100vw";
+  form.style.left = "100vw";    
+  }
   poBanner.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
   poCrea.style.left = "-350vw";
-
 }
 
 function backForm() {
@@ -52,9 +57,15 @@ function backForm() {
   poCrea.style.left = "-350vw";
 }
 
+var waName = document.getElementById('wa_name');
+var waEmail = document.getElementById('wa_email');
+var waNumber = document.getElementById('wa_number');
+var waUrl = document.getElementById('wa_url');
+
 function showPopupBrief() {
   poBrief.style.left = "100vw";
   form.style.left = "5vw";
+
 }
 
 
@@ -106,3 +117,4 @@ function closeNav (){
   lbm.style.left = "-200vh";
   navMobile.style.top = "100vh";
 }
+
