@@ -4,8 +4,9 @@ html {
 }
 
 
-
 body {
+    font-family: candara;
+    color: white;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     position: fixed;
@@ -117,6 +118,34 @@ body::-webkit-scrollbar {
     border: 1px solid white;
 }
 
+.btn-design {
+    position: absolute;
+    bottom: 5vh;
+    right: 8vw;
+}
+
+table, tr, td {
+    text-align: center;
+ /*   background: green;
+    border: 1px solid white;*/
+}
+
+
+
+.validate, textarea, select, option {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-bottom: 1px solid white;
+}
+
+option {
+    color: black;
+}
+
 .btn-utama:hover {
     background: white;
     color: darkmagenta;
@@ -136,7 +165,7 @@ body::-webkit-scrollbar {
 
 .nav {
     position: absolute;
-    z-index: 2;
+    z-index: 99;
     padding: 0;
     font-family: candara;
     width: 40vw;
@@ -187,7 +216,7 @@ ul a:hover {
 }
 
 #nav {  
-        z-index: 21;
+        z-index: 99;
         position: absolute;
         top: 0vw;
         display: -ms-flexbox;
@@ -458,17 +487,18 @@ p {
 }
 
 .btn-close-popup {
-    padding: 0.5vw 1vw;
-    color: white;
-    position: absolute;    
-    right: 0vw;
-    top:  -5vh;
-    border: 1px solid white;
-    border-radius: 10px;
-    background: transparent;
-    font-weight: bolder;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100px;
     cursor: pointer;
-    box-sizing: border-box;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 10vw;
+    z-index: 24;
 }
 
 .btn-close-popup:hover {
