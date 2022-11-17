@@ -1,151 +1,396 @@
-.brief {
-  width: 90vw;
-  height: 90vh;
-  left: 100vw;
-  top: 5vh;
-  border-radius: 20px;
-  z-index: 56;
-  background: rgba(0, 0, 0, 0.9);
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition-duration: 1s;
-  box-shadow: 10vw 0 30px rgba(100, 0, 140, 0.4);;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Rifal Agrian gunadi">
+    <link href="img/fav.ico" rel="shortcut icon">
+    <title>Agrian Design</title>
+    <!-- font icons -->
+    <!-- Bootstrap + LeadMark main styles -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="swiper.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="brief.css">
+
+</head>
+<body>
+
+<!-- <button onclick="closeFullscreen();">Close Fullscreen</button> -->
+<div id="awal" class="awal">
+    <img class="img-awal" src="img/Agrian.svg">
+    <h1 class="text-awal">" Welcome To Agrian Design "</h1>
+    <button class="open-web" onclick="openFullscreen();">Open</button>
+</div>
+
+<!-- navbar -->
+<img class="logo" src="img/Agrian.svg">
+<h2 class="text">Agrian Design</h2>
+
+<h1 class="welcome welcome-a">These are</h1>
+<h1 class="welcome welcome-b">all my works</h1>
+
+
+<!-- navbar desktop -->
+<nav class="nav-desktop">
+    <ul id="nav" class="nav">
+        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
+        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
+        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
+    </ul>
+</nav>  
+<!-- navbar desktop-->
+
+
+<!-- navbar mobile -->
+    <div id="iconNav" onclick="openNavMobile()" class="icon-nav">
+        <div class="nav-icon">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+<div id="navMobile" class="nav-mobile">
+
+    <ul class="ul-nav-mobile">
+        <a onclick="showPopup(); showPopupFeeds();" href="#">Feeds</a>
+        <a onclick="showPopup(); showPopupCreations();" href="#">Creations</a>
+        <a onclick="showPopup(); showPopupBanner();" href="#">Banner</a>
+    </ul>
+
+    <img class="logo-nav" src="img/Agrian.svg">
+    <h4 class="text-nav">Agrian Design</h4 >
+</div>    
+
+<!-- navbar mobile -->
+<a onclick="showPopup(); backForm()" class="open-web btn-design">Design</a>
+<div id="form" class="brief form">
+    <button class="btn-close-popup close-brief" onclick="closePopup()">x</button>
+            <img class="logo-brief" src="img/Agrian.svg">   
+    <h1 class="title-brief">AGRIAN DESIGN BRIEF</h1>
+  <table>
+    <form class="whatsapp-form">
+    <tr>
+      <td><input class="validate" id="wa_name" placeholder="Nama" name="name" required="" type="text" value=''/></td>
+    </tr>
+    <tr>
+      <td><input class="validate" id="wa_email" placeholder="Email" name="email" required="" type="email" value=''/></td>
+    </tr>
+    <tr>
+      <td>
+          <select id="wa_select">
+              <option hidden='hidden' selected='selected' value='default'>Pilih Design</option>
+              <option value="Feeds">Feeds</option>
+              <option value="Banner">Banner</option>
+              <option value="Creations">Creations</option>
+              <option value="Logo">Logo</option>
+              <option value="Flyers">Flyers</option>
+          </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input class="validate" id="wa_number" placeholder="No Hp/Wa" name="count" required="" type="number" value=''/></td>
+    </tr>
+    <tr>
+      <td><input class="validate" id="wa_url" placeholder="Alamat" name="url" required="" type="url" value=''/></td>
+    </tr>
+    <tr>
+      <td><textarea id='wa_textarea' placeholder='Keterangan' maxlength='5000' row='1' required=""></textarea></td>
+    </tr>
+    <tr>        
+      <td><button onclick="nextForm()" class="open-web btn-form">Next</button></td>
+    </tr>
+  </table>
+
+</div>
+
+<div id="brief" class="brief">
+    <img class="logo-brief" src="img/Agrian.svg">
+    <h1 class="title-brief">AGRIAN DESIGN BRIEF</h1>
+    <h4 class="text-brief">"Silahkan sesuaikan rasa dan tampilan design anda (geser bola ke arah kiri atau kanan)"</h4>
+    <button class="btn-close-popup close-brief" onclick="closePopup()">x</button>
+  <table>
+    <tr>
+      <td>Minimalis</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="minToCom"></td>
+      <td>Kompleks</td>
+    </tr>
+    <tr>
+      <td>Modern</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="modToCla"></td>
+      <td>Klasik</td>
+    </tr>
+    <tr>
+      <td>Ceria</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="plaToSer"></td>
+      <td>Serius</td>
+    </tr>
+    <tr>
+      <td>Berisik</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="louToQui"></td>
+      <td>Tenang</td>
+    </tr>
+    <tr>
+      <td>Elegan</td>
+      <td> <input type="range" min="1" max="100" value="50" class="slider" id="eleToAbs"></td>
+      <td>Abstrak</td>
+    </tr>
+    <tr>
+  </table>
+  <br><br>
+  <table>
+        <td><a class="open-web btn-form" onclick="backForm()">Back</a></td>
+        <td><a class="send_form open-web btn-form" style="text-decoration: none;" href="javascript:void" type="submit" title="Send to Whatsapp">Order</a></td>
+    </tr>
+    <tr>
+    </tr>
+   </table>  
+<input style="visibility: hidden;" disabled type="text" value="" id="briefCode">
+</form>
+</div>
+
+<script type="text/javascript">
+var minToCom = document.getElementById('minToCom');
+var modToCla = document.getElementById('modToCla');
+var plaToSer = document.getElementById('plaToSer');
+var louToQui = document.getElementById('louToQui');
+var eleToAbs = document.getElementById('eleToAbs');
+
+
+minToCom.oninput = function() {
+  briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
 }
 
-.logo-brief {
-  width: 10vw;
-  height: 10vw;
-  position: absolute;
-  top: 5vh;
-  left: 40vw;
-
+modToCla.oninput = function() {
+  briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
 }
 
-.title-brief, .text-brief {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 10vh;
+plaToSer.oninput = function() {
+  briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
 }
 
-.text-brief {
-  font-weight: lighter;
-  bottom: 10vh;
+louToQui.oninput = function() {
+  briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
 }
 
+eleToAbs.oninput = function() {
+  briefCode.value = "A" + minToCom.value + "B" + modToCla.value + "C" + plaToSer.value + "D" + louToQui.value + "E" + eleToAbs.value ;
+}
+</script>
 
-.close-brief {
-  position: absolute;
-  top: 3vh;
-  right: 3vh;
+
+<div id="containerFeeds" class="container">
+<div class="swiper mySwiper feeds-home">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-F.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-B.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-A.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-C.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-D.jpg"></div>
+        <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-E.jpg"></div>
+      </div>
+</div>
+</div>
+<!-- Feeds -->
+<!-- Feeds -->
+
+
+<!-- Cards -->
+<div class="container-logo">
+<div class="swiper swiperLogo">
+      <div class="swiper-wrapper swiper-wrapper-logo">
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-A.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-B.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-C.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-D.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-E.png">
+        </div>
+        <div class="swiper-slide swiper-slide-logo">
+            <img src="img/cards/Card-F.png">
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Cards -->
+
+
+<div class="js-angle-slider">
+  <!--
+    prev,nextボタン
+  --><!-- 
+  <div class="js-angle-slider__pager">
+    <button class="js-angle-slider__prev" type="button">
+      prev
+    </button>
+    <button class="js-angle-slider__next" type="button">
+      next
+    </button>
+  </div>
+   -->
+  <div class="js-angle-slider__body">
+  
+    <div class="js-angle-slider__list" data-slide-angle="12" data-show="7" data-speed="400" data-drag-speed-ratio="0.1" data-dots="true">
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-A.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-B.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-C.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-D.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-E.png"></div>
+      <div class="js-angle-slider__item"><img class="img-2" src="img/Logo/Logo-F.png"></div>
+    </div>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div onclick="closePopup()" id="lightbox" class="lightbox"></div>
+<div onclick="closeNav()" id="lightboxMobile" class="lightbox lightbox-mobile"></div>
+<!-- lightbox -->
+
+
+<!-- PopUp -->
+           
+    <div id="popupBanner" class="popup-banner">
+           
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
+
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner">
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-B.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-A.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-C.jpg"></div>
+                <div class="swiper-slide swiper-slide-banner"><img class="img-banner" src="img/Banners/Banner-D.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupCreations" class="popup-banner">
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea1.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea2.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea3.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea4.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea5.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea6.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea7.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/creations/crea8.jpg"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="popupFeeds" class="popup-banner">
+            <button id="closePopup" onclick="closePopup()" class="btn-close-popup">x</button>
+        <div class="swiper mySwiper swiper-banner">
+            <div class="swiper-wrapper swiper-wrapper-baner swiper-wrapper-creations">
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-A.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-B.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-C.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-D.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-E.jpg"></div>
+                <div class="swiper-slide swiper-slide-crea"><img class="img-crea" src="img/feeds/Feeds-F.jpg"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- PopUp -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/bawah.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+
+    var swiper = new Swiper(".swiperLogo", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+       window.addEventListener("load", function() {
+    var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+   bannerNode.parentNode.removeChild(bannerNode);
+});
+
+$(document).on('click','.send_form', function(){
+var input_blanter = document.getElementById('wa_email');
+
+/* Whatsapp Settings */
+var walink = 'https://web.whatsapp.com/send',
+    phone = '6283106300509',
+    walink2 = 'Halo saya ingin ',
+    text_yes = 'Terkirim.',
+    text_no = 'Isi semua Formulir lalu klik Send.';
+
+/* Smartphone Support */
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+var walink = 'whatsapp://send';
 }
 
-.form {
-  left: 100vw;
+if("" != input_blanter.value){
+
+ /* Call Input Form */
+var input_select1 = $("#wa_select :selected").text(),
+    input_name1 = $("#wa_name").val(),
+    input_email1 = $("#wa_email").val(),
+    input_number1 = $("#wa_number").val(),
+    input_url1 = $("#wa_url").val(),
+    input_textarea1 = $("#wa_textarea").val();
+
+/* Final Whatsapp URL */
+var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
+    '*Nama : ' + input_name1 + '%0A' +
+    '*Email* : ' + input_email1 + '%0A' +
+    '*Jenis Design* : ' + input_select1 + '%0A' +
+    '*No Hp/Wa* : ' + input_number1 + '%0A' +
+    '*Alamat* : ' + input_url1 + '%0A' +
+    '*Keterangan* : ' + input_textarea1 + '%0A';
+
+/* Whatsapp Window Open */
+window.open(blanter_whatsapp,'_blank');
+document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
+} else {
+document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
 }
-
-.slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 5px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: white;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #04AA6D;
-  cursor: pointer;
-}
-
-td {
-  padding: 1vh;
-}
-
-table {
-  width: 90%;
-  text-align: center;
-  left: 5%;
-
-}
-
-
-
-@media (orientation: portrait) {
-
-td {
-  padding: 2vw;
-}
-
-.brief {
-  width: 90%;
-  height: 90%;
-  left: 100vw;
-  top: 5vh;
-}
-
-.form {
-  left: 100vw;
-}
-
-.logo-brief {
-  width: 40vw;
-  height: 40vw;
-  position: absolute;
-  left: 25vw;
-  top: 3vh;
-  cursor: pointer;
-  transition-duration: 0.5s;
-}
-
-.logo:hover {
-  transform: rotateZ(45deg);
-}
-
-.title-brief {
-  font-size: 1em;
-  bottom: 10vh;
-}
-
-.text-brief {
-  font-size: 0.7em;
-  padding: 10vw;
-  bottom: 8vh;
-}
-
-.btn-form {
-  margin: 0;
-}
-
-.close-brief {
-
-}
-
-  }
+});
+</script>
+</body>
+</html>
