@@ -31,8 +31,8 @@ function showPopupCreations() {
   poCrea.style.left = "10vw";
   poBanner.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
-  poBrief.style.left = "100vw";
-  form.style.left = "100vw";
+  poBrief.style.left = "200vw";
+  form.style.left = "200vw";
 }
 
 function nextForm() {
@@ -42,7 +42,7 @@ function nextForm() {
 
   else {
   poBrief.style.left = "5vw";
-  form.style.left = "100vw";    
+  form.style.left = "200vw";    
   }
   poBanner.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
@@ -50,7 +50,7 @@ function nextForm() {
 }
 
 function backForm() {
-  poBrief.style.left = "100vw";
+  poBrief.style.left = "200vw";
   form.style.left = "5vw";
   poBanner.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
@@ -63,7 +63,7 @@ var waNumber = document.getElementById('wa_number');
 var waUrl = document.getElementById('wa_url');
 
 function showPopupBrief() {
-  poBrief.style.left = "100vw";
+  poBrief.style.left = "200vw";
   form.style.left = "5vw";
 
 }
@@ -74,14 +74,14 @@ function closePopup(){
   poBanner.style.left = "-350vw";
   poCrea.style.left = "-350vw";
   poFeeds.style.left = "-350vw";
-  poBrief.style.left = "100vw";
-  form.style.left = "100vw";
+  poBrief.style.left = "200vw";
+  form.style.left = "200vw";
 }
 
 var elem = document.documentElement;
 var awal = document.getElementById('awal');
 function openFullscreen() {
-    awal.style.left = '-200vh';
+    awal.style.left = '-200vw';
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
