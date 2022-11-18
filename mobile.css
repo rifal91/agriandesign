@@ -56,7 +56,7 @@ ul a {
 
 .js-angle-slider__body {
   position: absolute;
-  top: 80vh;
+  top: 70vh;
   right: 0;
   width: 100vw  ;
 }
@@ -64,6 +64,8 @@ ul a {
 .logo {
   top: 3vh;
   left: 2vw;
+  width: 15vw;
+  height: 15vw;
 }
 
 .text {
@@ -133,9 +135,9 @@ ul a {
 }
 
 .icon-nav {
-  width: 25vw;
+  width: 15vw;
   position: absolute;
-  height: 25vw;
+  height: 15vw;
   right: -4vw;
   z-index: 19;
   top: 3vh;
@@ -201,12 +203,17 @@ ul a {
 
 .img-feeds {
   
-}
+} 
 
 .swiper-slide-fh {
-  width: 40vw;
-  height: auto;
-  background: red;
+
+}
+
+.feeds-home {
+  width: 50vw;
+}
+
+.swiper-wrapper-feeds-home {
 }
 
 .img-crea {
@@ -218,9 +225,10 @@ ul a {
 }
 
 .btn-design {
-  bottom: 2vh;
-  padding: 13px;
+  bottom: 7vh;
   z-index: 10;
+  text-align: center;
+  padding: 2vh 8vw;
 }
 
 .btn-close-popup {

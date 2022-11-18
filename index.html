@@ -71,7 +71,7 @@
 </div>    
 
 <!-- navbar mobile -->
-<a onclick="showPopup(); backForm()" class="open-web btn-design">Design</a>
+<a onclick="showPopup(); backForm()" class="btn-design">Design</a>
 <div id="form" class="brief form">
     <img class="logo-brief" src="img/Agrian.svg">   
     <button class="btn-close-popup close-brief" onclick="closePopup()">x</button>
@@ -188,7 +188,7 @@ eleToAbs.oninput = function() {
 
 <div id="containerFeeds" class="container">
 <div class="swiper mySwiper feeds-home">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper swiper-wrapper-feeds-home">
         <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-F.jpg"></div>
         <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-B.jpg"></div>
         <div class="swiper-slide swiper-slide-fh"><img class="img-feeds" src="img/feeds/Feeds-A.jpg"></div>
@@ -377,7 +377,7 @@ var input_select1 = $("#wa_select :selected").text(),
 
 /* Final Whatsapp URL */
 var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
-    '*Nama *: ' + input_name1 + '%0A' +
+    '*Nama*: ' + input_name1 + '%0A' +
     '*Email* : ' + input_email1 + '%0A' +
     '*Jenis Design* : ' + input_select1 + '%0A' +
     '*No Hp/Wa* : ' + input_number1 + '%0A' +

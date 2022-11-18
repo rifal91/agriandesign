@@ -1,7 +1,7 @@
 .brief {
   width: 90vw;
   height: 90vh;
-  left: 100vw;
+  left: 200vw;
   top: 5vh;
   border-radius: 20px;
   z-index: 56;
@@ -116,7 +116,7 @@ td {
 .brief {
   width: 90%;
   height: 90%;
-  left: 100vw;
+  left: 200vw;
   padding: 0;
   top: 5vh;
 }
