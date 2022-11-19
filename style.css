@@ -120,21 +120,9 @@ body::-webkit-scrollbar {
 
 .btn-design {
     position: absolute;
-    bottom: 3vh;
+    bottom: 5vh;
     right: 8vw;
-    border: 1px solid white;
-    border-radius: 100px;
-    padding: 2vh 6vw;
-    cursor: pointer;
-    font-weight: bold;
 }
-
-.btn-design:hover {
-     background: rgba(300, 300, 300, 0.7);
-    color: rgb(50, 0, 50);
-    cursor: pointer;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-}   
 
 table, tr, td {
     text-align: center;
@@ -373,7 +361,7 @@ h1{
 .js-angle-slider__list {
    position: absolute;
    width: 60vw;
-   top: 60vh;
+   top: 56vh;
    right: -40vw;
 }
 .js-angle-slider__list.is-initialized {
