@@ -122,6 +122,7 @@ body::-webkit-scrollbar {
     position: absolute;
     bottom: 5vh;
     right: 8vw;
+    border: 2px solid white;
 }
 
 table, tr, td {
