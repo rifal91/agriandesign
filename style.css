@@ -125,6 +125,7 @@ body::-webkit-scrollbar {
     border: 2px solid white;
     padding: 2vh 4vw;
     boradius 100px;
+    pointer: cursor;
 }
 
 table, tr, td {
