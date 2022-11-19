@@ -123,6 +123,7 @@ body::-webkit-scrollbar {
     bottom: 5vh;
     right: 8vw;
     border: 2px solid white;
+    padding: 2vh 4vw;
 }
 
 table, tr, td {
